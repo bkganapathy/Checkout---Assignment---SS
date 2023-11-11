@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .checkout-form {
+            display: inline-block;
+            text-align: left;
+            margin: 20px;
+            border: 1px solid;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+        <div class="checkout-form">
+            <h2>Order Confirmation</h2>
+            <p>Order ID: {{ order_id }}</p>
+            <p>Order Date: {{ order_date }}</p>
+            <p>Book Name: {{ order_item }}</p>
+            <p>Quantity: 01 no.</p>
+            <p>Order Amount: Rs. {{order_amt  }}/- </p>
+            
+            <h1>Delivery Details:</h1>
+            <p>Delivery to: {{ user_name }}</p>
+            <p>Address: {{ user_address }}</p>
+            <p>Contact No. : {{ user_mobile }}</p>
+
+            <h1>Payment Details:</h1>
+            <p>Payment Type: Cash on Delivery</p>
+        </div>
+    </div>    
+</body>
+</html>
